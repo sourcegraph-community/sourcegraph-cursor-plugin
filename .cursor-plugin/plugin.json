@@ -1,9 +1,10 @@
 {
   "name": "sourcegraph",
   "version": "0.1.0",
-  "description": "Use Sourcegraph MCP from Cursor for code search, navigation, and file reading.",
+  "description": "Full-featured Cursor plugin for Sourcegraph with skills, commands and MCP.",
   "author": {
-    "name": "Sourcegraph Community"
+    "name": "Sourcegraph",
+    "email": "community@sourcegraph.com"
   },
   "homepage": "https://github.com/sourcegraph-community/sourcegraph-cursor-plugin",
   "repository": "https://github.com/sourcegraph-community/sourcegraph-cursor-plugin",
@@ -13,5 +14,6 @@
     "mcp",
     "code-search",
     "cursor"
-  ]
+  ],
+  "logo": "assets/logo.svg"  
 }
