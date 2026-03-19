@@ -6,7 +6,6 @@ Sourcegraph plugin for Cursor that adds:
 - Reusable Sourcegraph-focused commands
 - A `searching-sourcegraph` skill for agent workflows
 
-Built from the `sourcegraph-gemini` extension and adapted to Cursor plugin conventions.
 
 ## Structure
 
@@ -15,8 +14,8 @@ Built from the `sourcegraph-gemini` extension and adapted to Cursor plugin conve
 ├── .cursor-plugin/plugin.json
 ├── .mcp.json
 ├── commands/
-│   ├── sg-file.md
-│   └── sg-search.md
+│   ├── sourcegraph-deepsearch.md
+│   └── sourcegraph-search.md
 ├── skills/
 │   └── searching-sourcegraph/
 │       └── SKILL.md
@@ -29,7 +28,6 @@ Built from the `sourcegraph-gemini` extension and adapted to Cursor plugin conve
 2. Use this repository URL.
 3. Set environment variables used by `.mcp.json`:
    - `SOURCEGRAPH_ENDPOINT` (for example `https://sourcegraph.com`)
-   - `SOURCEGRAPH_ACCESS_TOKEN` (personal access token)
 
 The plugin exposes a Sourcegraph MCP server named `sourcegraph`.
 
@@ -38,13 +36,12 @@ The plugin exposes a Sourcegraph MCP server named `sourcegraph`.
 - `SOURCEGRAPH_ENDPOINT` should not include a trailing slash.
 - MCP endpoint is `${SOURCEGRAPH_ENDPOINT}/.api/mcp`.
 - MCP transport type is `http`.
-- Authorization header is sent as `token <SOURCEGRAPH_ACCESS_TOKEN>`.
 - This matches Sourcegraph's official Cursor MCP integration docs: `https://sourcegraph.com/docs/api/mcp`.
 
 ## Included Commands
 
-- `/sg-search` to run Sourcegraph search workflows
-- `/sg-file` to fetch a file and summarize it
+- `/sourcegraph-deepsearch` to run Sourcegraph search workflows
+- `/sourcegraph-search` to fetch a file and summarize it
 
 ## Included Skill
 

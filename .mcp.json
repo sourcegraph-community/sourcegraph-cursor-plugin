@@ -1,11 +1,8 @@
 {
   "mcpServers": {
     "sourcegraph": {
-      "type": "http",
-      "url": "${env:SOURCEGRAPH_ENDPOINT}/.api/mcp",
-      "headers": {
-        "Authorization": "token ${env:SOURCEGRAPH_ACCESS_TOKEN}"
-      }
+      "url": "https://demo.sourcegraph.com/.api/mcp",
+      "type": "http"
     }
   }
 }
