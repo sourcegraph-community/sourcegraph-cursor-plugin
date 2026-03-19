@@ -14,5 +14,6 @@
     "mcp",
     "code-search",
     "cursor"
-  ]
+  ],
+  "logo": "assets/logo.svg"  
 }
