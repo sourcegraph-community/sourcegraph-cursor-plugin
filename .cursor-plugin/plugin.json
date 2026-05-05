@@ -15,5 +15,12 @@
     "code-search",
     "cursor"
   ],
-  "logo": "assets/logo.svg"  
+  "logo": "assets/logo.svg",
+  "variables": [
+    {
+      "name": "SOURCEGRAPH_ENDPOINT",
+      "description": "Base URL for your Sourcegraph instance (for example https://sourcegraph.com).",
+      "default": "https://demo.sourcegraph.com"
+    }
+  ]
 }

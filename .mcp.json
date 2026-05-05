@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "sourcegraph": {
-      "url": "https://demo.sourcegraph.com/.api/mcp",
+      "url": "${SOURCEGRAPH_ENDPOINT}/.api/mcp",
       "type": "http"
     }
   }

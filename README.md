@@ -33,6 +33,10 @@ The plugin exposes a Sourcegraph MCP server named `sourcegraph`.
 
 ## Configuration Notes
 
+- The plugin declares a manifest variable named `SOURCEGRAPH_ENDPOINT` in `.cursor-plugin/plugin.json`.
+- Cursor users can configure this variable at user scope:
+  - right after plugin install via the optional "Configure Plugin Variables" follow-up modal
+  - later from plugin details via the "Configure" button (re-opens the same modal)
 - `SOURCEGRAPH_ENDPOINT` should not include a trailing slash.
 - MCP endpoint is `${SOURCEGRAPH_ENDPOINT}/.api/mcp`.
 - MCP transport type is `http`.
